@@ -15,9 +15,9 @@ const StyledBannerActions = styled.div`
     }}
 `
 
-export const BannerActions = ({ children, placement, className, ...props }) => {
+export const BannerActions = ({ children, placement, className }) => {
   return (
-    <StyledBannerActions {...props} placement={placement} className={className}>
+    <StyledBannerActions placement={placement} className={className}>
       {children}
     </StyledBannerActions>
   )
